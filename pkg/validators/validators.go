@@ -56,5 +56,5 @@ func validate(registryData *DockerConfigJson, endpoint string) error {
 			return errors.New("docker credentials file is not valid (no base64 credentials). Please re-create this file")
 		}
 	}
-	return errors.New(fmt.Sprintf("docker auth file does not contain registry %q that you specified in config. Please use docker login", endpoint))
+	return errors.New(fmt.Sprintf("docker auth file does not contain registry %q that you specified in config. Please use docker registryLogin", endpoint))
 }

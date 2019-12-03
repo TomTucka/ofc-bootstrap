@@ -178,9 +178,9 @@ secrets:
 
 ### Docker registry
 #### This can be any cluster accessible by your cluster. To populate the file
-#### run `docker login` with "store in keychain" turned off in Docker Desktop.
+#### run `docker registryLogin` with "store in keychain" turned off in Docker Desktop.
 #### This can also be your private registry
-#### Format: registry/username/ - i.e. replace ofctest with your login
+#### Format: registry/username/ - i.e. replace ofctest with your registryLogin
 
 registry: docker.io/ofctest/
 
